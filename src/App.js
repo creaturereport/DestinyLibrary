@@ -10,12 +10,22 @@ import PlayerProfile from "./components/PlayerProfile";
 
 function App() {
   return (
+    <div> 
+      hello from app.js
     <Router>
       <Switch>
-      <Route default exact path="/Homepage"><HomePage /></Route> 
-      <Route exact path="/PlayerProfile"><PlayerProfile /></Route>
+         
+        <Route exact path="/homepage">
+          <HomePage />
+        </Route> 
+          
+        <Route exact path="/playerprofile">
+          <PlayerProfile />
+        </Route>
+       
       </Switch>
     </Router>
+    </div>
   );
 }
 

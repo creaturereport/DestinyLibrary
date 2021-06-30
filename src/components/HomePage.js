@@ -8,39 +8,25 @@ function HomePage() {
     axios
       .get("https://destiny-player-library-default-rtdb.firebaseio.com/.json")
       .then((res) => {
-     //   setData(res.data);
-        const {SinfulKillz, JimmyBuckets} = res.data;
-        data.push(SinfulKillz, JimmyBuckets )
-        console.log(data);
-        setData(data);
-/*         console.log(SinfulKillz.userName);
-        console.log(SinfulKillz.platform);
- */
-        
-      });
-  }, [data]);
-
-  
+        setData(Object.entries(res.data))
+        console.log(data)
      
- 
 
-  console.log(Object.entries(data));
-
-  data.map(player => {
-        return (<div>{player}</div>);
-  })
-  
-
-/*   return (
-    <div>
-        <p>hello</p>
-        {data.map(player => (
-            
-            <div>{player}</div>
-
-        ))}
-    </div>
-  );
- */}
+      });
+  }, []);
+        return (
+        <div>
+            <h1> Destiny Players </h1>
+            {data.map((player, i) => (
+              <div>
+                <h3> Player {i} : {player[0]}</h3>
+                <p>Light Level : {player[1].currentLightLevel} </p>
+                <p>Join Date : {player[1].joinDate} </p>
+                <p>Platform : {player[1].platform} </p>
+              </div>
+            ))}
+        </div>
+        );  
+}
 
 export default HomePage;
