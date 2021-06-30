@@ -1,0 +1,38 @@
+
+
+{
+    "SinfulKillz":{
+        "userName": "SinfulKillz",
+        "platform": "Ps4",
+        "joinDate": "September 6, 2017",
+        "currentLightLevel": 1250,
+        "PvP-Stats":{
+            "crucibleKills": 12000,
+            "crucibleWins": 500,
+            "crucibleKDA": 1.5
+        },
+        "PvE-Stats": {
+            "lost-sectors": 350,
+            "heroicPublicEvents": 12450,
+            "strikes": 923,
+            "raids": 10
+        }
+    },
+    "JimmyBuckets":{
+        "userName": "JimmyBuckets",
+        "platform": "PC",
+        "joinDate": "December 25, 2020",
+        "currentLightLevel": 1300,
+        "PvP-Stats":{
+            "crucibleKills": 3045,
+            "crucibleWins": 120,
+            "crucibleKDA": 0.5
+        },
+        "PvE-Stats": {
+            "lost-sectors": 85,
+            "heroicPublicEvents": 650,
+            "strikes": 235,
+            "raids": 1
+        }
+    }
+}
