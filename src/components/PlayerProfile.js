@@ -4,8 +4,9 @@ import React from 'react';
 
 function PlayerProfile() {
     return (
-        <div>hello</div>
+        <div>hello World</div>
     )
 }
 
 export default PlayerProfile;
+
